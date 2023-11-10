@@ -1,8 +1,10 @@
 ## Ping testr
 
-Po zgraniu zmienic uprawnienia dla plików .sh.
 
-'sudo chmod +x dodaj_ip_list.sh '
+Po zgraniu zmienic uprawnienia dla katalogu 'ping' oraz dla pliku  ping_host.sh.
 
 'sudo chmod +x ping_host.sh '
 
+Dla katalogu 'ping'
+
+'sudo chmod 777 ping ':wq
