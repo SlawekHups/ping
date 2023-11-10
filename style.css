@@ -1,0 +1,5 @@
+.table-striped {
+    max-width: 800px;
+    margin-block-start: inherit;
+    margin-inline: auto;
+}

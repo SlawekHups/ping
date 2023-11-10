@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "$(date) Skrypt został uruchomiony ping_host" >> /var/www/html/ping/debug.log
 
 # Pobranie aktualnej daty
 CURRENT_DATE=$(date +"%Y-%m-%d %H:%M:%S")
@@ -75,8 +76,24 @@ if [ ! -f "${HTML_FILE}" ]; then
     ${FONT_AWESOME} <!-- Dodanie FontAwesome -->
 </head>
 <body>
-<h1 class='text-primary text-center'>Ping Report - ${CURRENT_DATE}</h1>
-<table class='table table-bordered mx-auto' style='max-width: 800px; margin-top: 80px;'>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.php">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="start.php">Dodaj IP do listy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="siec.php">Lista do skanowania</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<h1 class='text-primary text-center mt-5'>Ping Report - ${CURRENT_DATE}</h1>
+<table class='table table-bordered mx-auto' style='max-width: 600px; margin-top: 80px;'>
     <tr class='text text-center'>
         <th>Adres IP</th>
         <th>Nazwa Hosta</th>
