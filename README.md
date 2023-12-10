@@ -10,4 +10,9 @@ Po zgraniu zmienic uprawnienia dla katalogu 'ping' oraz dla pliku  ping_host.sh.
 
 Dla katalogu 'ping'
 
-' sudo chmod 777 ping '
+__Dla katalogu 'ping'__
+
+```bash
+ sudo chmod 777 ping 
+```
+ 
